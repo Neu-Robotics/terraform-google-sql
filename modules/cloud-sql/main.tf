@@ -232,7 +232,7 @@ resource "google_sql_database_instance" "read_replica" {
     google_sql_user.default,
   ]
 
-  provider         = "googlea"
+  provider         = "google"
   name             = "${var.name}-read-${count.index}"
   project          = var.project
   region           = var.region
