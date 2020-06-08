@@ -6,8 +6,7 @@
 # CONFIGURE OUR GCP CONNECTION
 # ------------------------------------------------------------------------------
 
-provider "google-beta" {
-  version = "~> 2.7.0"
+provider "google" {
   project = var.project
   region  = var.region
 }
